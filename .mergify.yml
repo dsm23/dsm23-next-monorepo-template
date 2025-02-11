@@ -3,8 +3,9 @@ pull_request_rules:
   - name: automatic approval
     conditions:
       - author=dsm23
+      - check-success=build
       - check-success=format
-      - "#check-success>=1"
+      - "#check-success>=2"
     actions:
       review:
         type: APPROVE
@@ -12,8 +13,9 @@ pull_request_rules:
   - name: automatic approval for Renovate pull requests
     conditions:
       - author=renovate[bot]
+      - check-success=build
       - check-success=format
-      - "#check-success>=1"
+      - "#check-success>=2"
     actions:
       review:
         type: APPROVE
@@ -21,8 +23,9 @@ pull_request_rules:
   # merge
   - name: Automatically merge when GitHub Actions jobs succeed
     conditions:
+      - check-success=build
       - check-success=format
-      - "#check-success>=1"
+      - "#check-success>=2"
       - "#approved-reviews-by>=1"
     actions:
       merge:
