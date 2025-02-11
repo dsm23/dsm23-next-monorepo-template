@@ -34,3 +34,7 @@ npm-debug.log*
 # Misc
 .DS_Store
 *.pem
+
+# Settings folder
+.vscode/settings.json
+.idea/
