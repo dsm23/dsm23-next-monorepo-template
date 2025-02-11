@@ -1,4 +1,4 @@
-name: Format check
+name: Lint check
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  format:
+  lint:
     runs-on: ubuntu-24.04
     steps:
       - name: Harden Runner
@@ -44,5 +44,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Format check
-        run: pnpm fmt.check
+      - name: Lint check
+        run: pnpm lint
