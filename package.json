@@ -17,6 +17,7 @@
     "@commitlint/cli": "19.7.1",
     "@commitlint/config-conventional": "19.7.1",
     "@commitlint/types": "19.5.0",
+    "@ianvs/prettier-plugin-sort-imports": "4.4.1",
     "@workspace/eslint-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
     "commitizen": "4.3.1",
