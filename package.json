@@ -10,6 +10,9 @@
     "fmt.check": "prettier --check ."
   },
   "devDependencies": {
+    "@commitlint/cli": "19.7.1",
+    "@commitlint/config-conventional": "19.7.1",
+    "@commitlint/types": "19.5.0",
     "@workspace/eslint-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
     "commitizen": "4.3.1",
