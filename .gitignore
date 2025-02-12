@@ -38,3 +38,9 @@ npm-debug.log*
 # Settings folder
 .vscode/settings.json
 .idea/
+
+# Cache Files
+.eslintcache
+.eslintmdcache
+.stylelintcache
+.prettiercache
