@@ -1,0 +1,4 @@
+{
+  "**/*.{js,mjs,ts,tsx}": ["turbo run lint --", "prettier --check"],
+  "**/*.{css,md,mdx,json,yml}": ["prettier --check"]
+}
