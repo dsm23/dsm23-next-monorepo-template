@@ -2,7 +2,9 @@
   "name": "shadcn-ui-monorepo",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
+    "prepare": "node .husky/install.js",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
@@ -17,6 +19,7 @@
     "@workspace/typescript-config": "workspace:*",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
+    "husky": "9.1.7",
     "prettier": "3.5.0",
     "turbo": "2.4.1",
     "typescript": "5.7.3"
