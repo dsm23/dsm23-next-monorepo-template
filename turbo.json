@@ -11,9 +11,8 @@
       "dependsOn": ["^coverage"],
       "outputs": ["coverage/**"]
     },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
+    "lint": {},
+    "lint:css": {},
     "lint:lint-staged": {
       "dependsOn": ["^lint"]
     },
