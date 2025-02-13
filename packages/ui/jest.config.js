@@ -1,12 +1,12 @@
 // https://jestjs.io/docs/configuration
-import { createRequire } from "node:module";
-
-const require = createRequire(import.meta.url);
+import { createDefaultEsmPreset } from "ts-jest";
 
 /**
  * @type {import("jest").Config}
  */
 const config = {
+  ...createDefaultEsmPreset({}),
+
   collectCoverageFrom: [
     "**/src/**/*.{js,jsx,ts,tsx}",
     "!**/src/**/*.stories.{js,jsx,ts,tsx}",
@@ -24,12 +24,7 @@ const config = {
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   moduleDirectories: ["node_modules", "<rootDir>"],
   testEnvironment: "jsdom",
-  transform: {
-    "^.+.tsx?$": ["ts-jest", {}],
-  },
   moduleNameMapper: {
-    // https://github.com/lucide-icons/lucide/issues/2734#issuecomment-2597970172
-    "lucide-react": require.resolve("lucide-react"),
     "^@workspace/ui/(.*)$": "<rootDir>/src/$1",
   },
 };
