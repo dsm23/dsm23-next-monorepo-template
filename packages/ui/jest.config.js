@@ -1,7 +1,12 @@
 // https://jestjs.io/docs/configuration
-import type { Config } from "jest";
+import { createRequire } from "node:module";
 
-const config: Config = {
+const require = createRequire(import.meta.url);
+
+/**
+ * @type {import("jest").Config}
+ */
+const config = {
   collectCoverageFrom: [
     "**/src/**/*.{js,jsx,ts,tsx}",
     "!**/src/**/*.stories.{js,jsx,ts,tsx}",
@@ -23,7 +28,9 @@ const config: Config = {
     "^.+.tsx?$": ["ts-jest", {}],
   },
   moduleNameMapper: {
-    "^~/(.*)$": "<rootDir>/src/$1",
+    // https://github.com/lucide-icons/lucide/issues/2734#issuecomment-2597970172
+    "lucide-react": require.resolve("lucide-react"),
+    "^@workspace/ui/(.*)$": "<rootDir>/src/$1",
   },
 };
 
