@@ -36,7 +36,7 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: ^15.4.3
+        specifier: 15.4.3
         version: 15.4.3
       prettier:
         specifier: 3.5.0
@@ -250,7 +250,7 @@ importers:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.5.2)
       babel-jest:
-        specifier: ^29.7.0
+        specifier: 29.7.0
         version: 29.7.0(@babel/core@7.26.8)
       jest:
         specifier: 29.7.0
