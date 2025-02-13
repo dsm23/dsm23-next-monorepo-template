@@ -25,7 +25,7 @@ import {
 const setup = (jsx: ReactElement, opts?: Options) => ({
   user: userEvent.setup(opts),
   // Import `render` from the framework library of your choice.
-  // See https://testing-library.com/docs/dom-iting-library/install#wrappers
+  // See https://testing-library.com/docs/dom-testing-library/install#wrappers
   ...render(jsx),
 });
 
