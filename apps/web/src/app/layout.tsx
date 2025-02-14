@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeSwitcher } from "@/components/theme-switcher";
+import { ThemeSwitcher } from "@/src/components/theme-switcher";
 import { ThemeProvider } from "@workspace/ui/components/theme-provider";
 
 import "@workspace/ui/globals.css";
