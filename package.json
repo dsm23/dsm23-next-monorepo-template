@@ -11,7 +11,8 @@
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "test": "turbo test",
-    "coverage": "turbo coverage"
+    "coverage": "turbo coverage",
+    "e2e": "turbo e2e"
   },
   "devDependencies": {
     "@commitlint/cli": "19.7.1",
