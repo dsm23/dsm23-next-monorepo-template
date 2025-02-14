@@ -9,6 +9,7 @@ const CUSTOM_AT_RULES = [
   "plugin",
   "responsive",
   "screen",
+  "source",
   "tailwind",
   "theme",
   "utility",
