@@ -73,10 +73,10 @@ importers:
         version: 19.0.0(react@19.0.0)
     devDependencies:
       '@axe-core/playwright':
-        specifier: ^4.10.1
+        specifier: 4.10.1
         version: 4.10.1(playwright-core@1.50.1)
       '@playwright/test':
-        specifier: ^1.50.1
+        specifier: 1.50.1
         version: 1.50.1
       '@types/node':
         specifier: 22.13.4
@@ -97,7 +97,7 @@ importers:
         specifier: workspace:*
         version: link:../../packages/typescript-config
       dotenv:
-        specifier: ^16.4.7
+        specifier: 16.4.7
         version: 16.4.7
       gzip-size:
         specifier: 7.0.0
