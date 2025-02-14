@@ -1,8 +1,9 @@
+import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeSwitcher } from "@/components/theme-switcher";
+import { ThemeProvider } from "@workspace/ui/components/theme-provider";
 
 import "@workspace/ui/globals.css";
-
-import { Providers } from "@/components/providers";
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -17,14 +18,25 @@ const fontMono = Geist_Mono({
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}
       >
-        <Providers>{children}</Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+          enableColorScheme
+        >
+          {children}
+          <footer className="mx-auto flex w-full items-center justify-center border-t py-16 text-center text-xs">
+            <ThemeSwitcher />
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );
