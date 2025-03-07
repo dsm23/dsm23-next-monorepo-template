@@ -15,8 +15,8 @@
     "e2e": "turbo e2e"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.7.1",
-    "@commitlint/config-conventional": "19.7.1",
+    "@commitlint/cli": "19.8.0",
+    "@commitlint/config-conventional": "19.8.0",
     "@commitlint/types": "19.8.0",
     "@ianvs/prettier-plugin-sort-imports": "4.4.1",
     "@workspace/eslint-config": "workspace:*",
