@@ -51,3 +51,5 @@ jobs:
 
       - name: Unit & Integration tests
         run: pnpm coverage
+        env:
+          FORCE_COLOR: 1
