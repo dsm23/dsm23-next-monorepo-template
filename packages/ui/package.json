@@ -49,7 +49,7 @@
     "stylelint-order": "6.0.4",
     "stylelint-selector-bem-pattern": "4.0.1",
     "tailwindcss": "4.0.15",
-    "ts-jest": "29.2.6",
+    "ts-jest": "29.3.0",
     "typescript": "5.8.2"
   },
   "exports": {
