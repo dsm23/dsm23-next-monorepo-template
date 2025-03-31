@@ -1,10 +1,13 @@
 import withBundleAnalyzer from "@next/bundle-analyzer";
 import type { NextConfig } from "next";
+import path from "node:path";
 
 const nextConfig: NextConfig = {
   transpilePackages: ["@workspace/ui"],
 
   output: "standalone",
+  outputFileTracingRoot: path.join(__dirname, "../../"),
+
   async rewrites() {
     return await [
       { source: "/healthz", destination: "/api/health" },
