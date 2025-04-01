@@ -26,7 +26,7 @@
     "@playwright/test": "1.51.1",
     "@tailwindcss/postcss": "4.0.17",
     "@total-typescript/ts-reset": "0.6.1",
-    "@types/node": "22.13.14",
+    "@types/node": "22.13.15",
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
     "@workspace/eslint-config": "workspace:^",
