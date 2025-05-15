@@ -35,9 +35,16 @@ npm-debug.log*
 .DS_Store
 *.pem
 
-# Settings folder
-.vscode/settings.json
-.idea/
+# editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Cache Files
 .eslintcache
