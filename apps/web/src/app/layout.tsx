@@ -1,9 +1,11 @@
-import type { ReactNode } from "react";
+import type { FunctionComponent, PropsWithChildren } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@workspace/ui/components/theme-provider";
 import { ThemeSwitcher } from "~/components/theme-switcher";
 
 import "@workspace/ui/globals.css";
+
+import { headers } from "next/headers";
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -15,11 +17,12 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 });
 
-export default function RootLayout({
+const RootLayout: FunctionComponent<PropsWithChildren> = async ({
   children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+}) => {
+  const headersList = await headers();
+  const nonce = headersList.get("x-nonce") ?? undefined;
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -31,6 +34,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
           enableColorScheme
+          nonce={nonce}
         >
           {children}
           <footer className="mx-auto flex w-full items-center justify-center border-t py-16 text-center text-xs">
@@ -40,4 +44,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
