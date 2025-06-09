@@ -12,9 +12,8 @@ RUN apk update
 RUN apk add --no-cache libc6-compat
 # Set working directory
 WORKDIR /app
-# Replace <your-major-version> with the major version installed in your repository. For example:
-# RUN yarn global add turbo@^2
-RUN npm i -g turbo@^2
+
+RUN npm i -g turbo@2.5.4
 COPY . .
 
 # Generate a partial monorepo with a pruned lockfile for a target workspace.
