@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "node .husky/install.js",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
@@ -23,8 +22,7 @@
     "@workspace/typescript-config": "workspace:*",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
-    "husky": "9.1.7",
-    "lint-staged": "16.1.0",
+    "lefthook": "1.11.13",
     "prettier": "3.5.3",
     "turbo": "2.5.4",
     "typescript": "5.8.3"
