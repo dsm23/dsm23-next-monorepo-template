@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@axe-core/playwright": "4.10.2",
-    "@playwright/test": "1.52.0",
+    "@playwright/test": "1.53.0",
     "@tailwindcss/postcss": "4.1.8",
     "@total-typescript/ts-reset": "0.6.1",
     "@types/node": "22.15.31",
