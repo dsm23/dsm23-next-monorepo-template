@@ -6,7 +6,7 @@
   "scripts": {
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
     "lint:js": "eslint . --max-warnings 0",
-    "lint": "run-s lint:js lint:css",
+    "lint": "run-p lint:js lint:css",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
   },

@@ -9,7 +9,7 @@
     "start": "next start",
     "lint:js": "next lint",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
-    "lint": "run-s lint:js lint:css",
+    "lint": "run-p lint:js lint:css",
     "e2e": "playwright test"
   },
   "dependencies": {
