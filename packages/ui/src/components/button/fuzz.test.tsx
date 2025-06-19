@@ -1,31 +1,22 @@
-// whitespace-pre to preserve double spaces. An example occurs on seed 1413643214
-
 import crypto from "node:crypto";
 import { fc, it } from "@fast-check/jest";
-import { afterEach, describe, expect } from "@jest/globals";
-import { cleanup, render, screen } from "@testing-library/react";
-import { cn } from "@workspace/ui/lib/utils";
+import { describe, expect } from "@jest/globals";
+import { render, screen } from "@testing-library/react";
 import { Button } from ".";
 
 describe("component", () => {
   describe("Button", () => {
-    afterEach(() => {
-      cleanup();
-    });
-
     it("should render correctly with various children", () => {
       fc.assert(
         fc.property(fc.string(), (buttonText) => {
           const id = crypto.randomUUID();
 
-          render(
-            <Button className="whitespace-pre" data-testid={id}>
-              {buttonText}
-            </Button>,
-          );
+          render(<Button data-testid={id}>{buttonText}</Button>);
 
           expect(screen.getByTestId(id)).toBeInTheDocument();
-          expect(screen.getByTestId(id)).toHaveTextContent(buttonText.trim());
+          expect(screen.getByTestId(id)).toHaveTextContent(buttonText, {
+            normalizeWhitespace: false,
+          });
         }),
       );
     });
@@ -36,7 +27,7 @@ describe("component", () => {
           const id = crypto.randomUUID();
 
           render(
-            <Button className="whitespace-pre" asChild>
+            <Button asChild>
               <a href={href} data-testid={id}>
                 {linkText}
               </a>
@@ -44,7 +35,9 @@ describe("component", () => {
           );
 
           expect(screen.getByTestId(id)).toBeInTheDocument();
-          expect(screen.getByTestId(id)).toHaveTextContent(linkText.trim());
+          expect(screen.getByTestId(id)).toHaveTextContent(linkText, {
+            normalizeWhitespace: false,
+          });
           expect(screen.getByTestId(id)).toHaveAttribute("href", href.trim());
         }),
       );
@@ -56,10 +49,7 @@ describe("component", () => {
           const id = crypto.randomUUID();
 
           render(
-            <Button
-              className={cn("whitespace-pre", className)}
-              data-testid={id}
-            >
+            <Button className={className} data-testid={id}>
               Test
             </Button>,
           );
