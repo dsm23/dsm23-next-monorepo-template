@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@fast-check/jest": "2.1.1",
-    "@jest/globals": "30.0.2",
+    "@jest/globals": "30.0.3",
     "@tailwindcss/postcss": "4.1.10",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.3.0",
