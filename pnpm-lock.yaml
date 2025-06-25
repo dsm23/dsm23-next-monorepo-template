@@ -19,7 +19,7 @@ importers:
         version: 19.8.1
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.4.2
-        version: 4.4.2(prettier@3.6.0)
+        version: 4.4.2(prettier@3.6.1)
       '@workspace/typescript-config':
         specifier: workspace:*
         version: link:packages/typescript-config
@@ -33,8 +33,8 @@ importers:
         specifier: 1.11.14
         version: 1.11.14
       prettier:
-        specifier: 3.6.0
-        version: 3.6.0
+        specifier: 3.6.1
+        version: 3.6.1
       turbo:
         specifier: 2.5.4
         version: 2.5.4
@@ -107,10 +107,10 @@ importers:
         version: 8.5.6
       prettier-plugin-css-order:
         specifier: 2.1.2
-        version: 2.1.2(postcss@8.5.6)(prettier@3.6.0)
+        version: 2.1.2(postcss@8.5.6)(prettier@3.6.1)
       prettier-plugin-tailwindcss:
         specifier: 0.6.13
-        version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.0))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.0))(prettier@3.6.0)
+        version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.1))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.1))(prettier@3.6.1)
       stylelint:
         specifier: 16.21.0
         version: 16.21.0(typescript@5.8.3)
@@ -281,10 +281,10 @@ importers:
         version: 8.5.6
       prettier-plugin-css-order:
         specifier: 2.1.2
-        version: 2.1.2(postcss@8.5.6)(prettier@3.6.0)
+        version: 2.1.2(postcss@8.5.6)(prettier@3.6.1)
       prettier-plugin-tailwindcss:
         specifier: 0.6.13
-        version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.0))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.0))(prettier@3.6.0)
+        version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.1))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.1))(prettier@3.6.1)
       stylelint:
         specifier: 16.21.0
         version: 16.21.0(typescript@5.8.3)
@@ -4147,8 +4147,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.6.0:
-    resolution: {integrity: sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==}
+  prettier@3.6.1:
+    resolution: {integrity: sha512-5xGWRa90Sp2+x1dQtNpIpeOQpTDBs9cZDmA/qs2vDNN2i18PdapqY7CmBeyLlMuGqXJRIOPaCaVZTLNQRWUH/A==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -5603,13 +5603,13 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.0)':
+  '@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.1)':
     dependencies:
       '@babel/generator': 7.26.8
       '@babel/parser': 7.26.8
       '@babel/traverse': 7.26.8
       '@babel/types': 7.26.8
-      prettier: 3.6.0
+      prettier: 3.6.1
       semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
@@ -9368,23 +9368,23 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.0):
+  prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.1):
     dependencies:
       css-declaration-sorter: 7.2.0(postcss@8.5.6)
       postcss-less: 6.0.0(postcss@8.5.6)
       postcss-scss: 4.0.9(postcss@8.5.6)
-      prettier: 3.6.0
+      prettier: 3.6.1
     transitivePeerDependencies:
       - postcss
 
-  prettier-plugin-tailwindcss@0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.0))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.0))(prettier@3.6.0):
+  prettier-plugin-tailwindcss@0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.1))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.1))(prettier@3.6.1):
     dependencies:
-      prettier: 3.6.0
+      prettier: 3.6.1
     optionalDependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.4.2(prettier@3.6.0)
-      prettier-plugin-css-order: 2.1.2(postcss@8.5.6)(prettier@3.6.0)
+      '@ianvs/prettier-plugin-sort-imports': 4.4.2(prettier@3.6.1)
+      prettier-plugin-css-order: 2.1.2(postcss@8.5.6)(prettier@3.6.1)
 
-  prettier@3.6.0: {}
+  prettier@3.6.1: {}
 
   pretty-format@27.5.1:
     dependencies:
