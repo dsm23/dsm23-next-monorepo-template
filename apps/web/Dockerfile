@@ -7,13 +7,16 @@ FROM node:24.3.0-alpine@sha256:49e45bf002728e35c3a466737d8bcfe12c29731c7c2f3e223
 # TODO: re-add corepack after it's been removed
 # RUN npm install -g corepack@latest
 
+# renovate: datasource=npm depName=turbo
+ARG TURBO_VERSION="2.5.4"
+
 FROM base AS builder
 RUN apk update
 RUN apk add --no-cache libc6-compat
 # Set working directory
 WORKDIR /app
 
-RUN npm i -g turbo@2.5.4
+RUN npm i -g turbo@$TURBO_VERSION
 COPY . .
 
 # Generate a partial monorepo with a pruned lockfile for a target workspace.
