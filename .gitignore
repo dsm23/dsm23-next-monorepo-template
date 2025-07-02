@@ -46,6 +46,9 @@ npm-debug.log*
 *.sln
 *.sw?
 
+# lefthook
+lefthook-local.yml
+
 # Cache Files
 .eslintcache
 .eslintmdcache
