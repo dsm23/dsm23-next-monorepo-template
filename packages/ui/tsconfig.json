@@ -1,12 +1,14 @@
 {
-  "extends": "@workspace/typescript-config/react-library.json",
+  "extends": "@workspace/typescript-config/react-library",
   "compilerOptions": {
-    //"outDir": "dist"
+    "lib": ["dom", "ES2015"],
+    "sourceMap": true,
+    "types": ["jest", "node"],
     "baseUrl": ".",
     "paths": {
       "@workspace/ui/*": ["./src/*"]
     }
   },
   "include": ["."],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["dist", "build", "node_modules"]
 }
