@@ -13,6 +13,7 @@ const config = {
     "^[.]",
     "<TYPES>",
   ],
+  // renovate: datasource=npm depName=typescript
   importOrderTypeScriptVersion: "5.7.3",
 };
 
