@@ -32,7 +32,7 @@
     "@workspace/eslint-config": "workspace:^",
     "@workspace/stylelint-config": "workspace:^",
     "@workspace/typescript-config": "workspace:*",
-    "dotenv": "17.1.0",
+    "dotenv": "17.2.0",
     "npm-run-all2": "8.0.4",
     "postcss": "8.5.6",
     "prettier-plugin-css-order": "2.1.2",
