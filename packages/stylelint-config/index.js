@@ -11,7 +11,7 @@ const CUSTOM_AT_RULES = [
   "tailwind",
   "theme",
   "utility",
-  "variants",
+  "variant",
   // PostCSS-specific at-rules
   "define-mixin",
   "mixin",
