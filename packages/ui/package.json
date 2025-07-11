@@ -4,6 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "build": "bunchee",
+    "dev": "bunchee --watch",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
     "lint:js": "eslint . --max-warnings 0",
     "lint": "run-p lint:js lint:css",
@@ -37,6 +39,7 @@
     "@workspace/stylelint-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
     "autoprefixer": "10.4.21",
+    "bunchee": "6.5.4",
     "jest": "30.0.4",
     "jest-environment-jsdom": "30.0.4",
     "npm-run-all2": "8.0.4",
@@ -56,8 +59,45 @@
   "exports": {
     "./globals.css": "./src/styles/globals.css",
     "./postcss.config": "./postcss.config.js",
-    "./lib/*": "./src/lib/*.ts",
-    "./components/*": "./src/components/*.tsx",
-    "./hooks/*": "./src/hooks/*.ts"
+    "./components/button": {
+      "import": {
+        "types": "./dist/es/button.d.mts",
+        "default": "./dist/es/button.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/button.d.ts",
+        "default": "./dist/cjs/button.js"
+      }
+    },
+    "./components/dropdown-menu": {
+      "import": {
+        "types": "./dist/es/dropdown-menu.d.mts",
+        "default": "./dist/es/dropdown-menu.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/dropdown-menu.d.ts",
+        "default": "./dist/cjs/dropdown-menu.js"
+      }
+    },
+    "./components/theme-provider": {
+      "import": {
+        "types": "./dist/es/theme-provider.d.mts",
+        "default": "./dist/es/theme-provider.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/theme-provider.d.ts",
+        "default": "./dist/cjs/theme-provider.js"
+      }
+    },
+    "./lib/utils": {
+      "import": {
+        "types": "./dist/es/utils.d.mts",
+        "default": "./dist/es/utils.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/utils.d.ts",
+        "default": "./dist/cjs/utils.js"
+      }
+    }
   }
 }
