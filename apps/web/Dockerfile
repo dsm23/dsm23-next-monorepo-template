@@ -8,7 +8,7 @@ FROM node:24.4.1-alpine@sha256:820e86612c21d0636580206d802a726f2595366e1b867e564
 # RUN npm install -g corepack@latest
 
 # renovate: datasource=npm depName=turbo
-ARG TURBO_VERSION="2.5.4"
+ARG TURBO_VERSION="2.5.5"
 
 FROM base AS builder
 RUN apk update
