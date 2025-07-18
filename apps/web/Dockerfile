@@ -11,12 +11,11 @@ FROM node:24.4.1-alpine@sha256:820e86612c21d0636580206d802a726f2595366e1b867e564
 ARG TURBO_VERSION="2.5.5"
 
 FROM base AS builder
-RUN apk update
-RUN apk add --no-cache libc6-compat
-# Set working directory
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why gcompat might be needed.
+RUN apk add --no-cache gcompat=1.1.0-r4
 WORKDIR /app
 
-RUN npm i -g turbo@$TURBO_VERSION
+RUN npm i -g "turbo@$TURBO_VERSION"
 COPY . .
 
 # Generate a partial monorepo with a pruned lockfile for a target workspace.
@@ -25,8 +24,8 @@ RUN turbo prune web --docker
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM base AS installer
-RUN apk update
-RUN apk add --no-cache libc6-compat
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why gcompat might be needed.
+RUN apk add --no-cache gcompat=1.1.0-r4
 WORKDIR /app
 
 ENV LEFTHOOK=0
@@ -34,8 +33,8 @@ ENV LEFTHOOK=0
 # First install the dependencies (as they change less often)
 COPY --from=builder /app/out/json/ .
 
-RUN corepack enable pnpm
-RUN pnpm install --frozen-lockfile
+RUN corepack enable pnpm \
+  && pnpm install --frozen-lockfile
 
 # Build the project
 COPY --from=builder /app/out/full/ .
@@ -45,8 +44,8 @@ FROM base AS runner
 WORKDIR /app
 
 # Don't run production as root
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+RUN addgroup --system --gid 1001 nodejs \
+  && adduser --system --uid 1001 nextjs
 USER nextjs
 
 # Automatically leverage output traces to reduce image size
