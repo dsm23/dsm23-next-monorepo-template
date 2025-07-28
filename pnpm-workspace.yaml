@@ -1,10 +1,14 @@
 onlyBuiltDependencies:
   - lefthook
+
 packages:
   - "apps/*"
   - "packages/*"
+
 publicHoistPattern:
   - "*eslint*"
   - "*prettier*"
+  - "*storybook*"
   - "*stylelint*"
+
 sideEffectsCache: false
