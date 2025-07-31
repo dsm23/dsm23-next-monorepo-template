@@ -34,6 +34,6 @@ jobs:
 
       # TODO: should another app be added that does not use jest, the show-seed flag will need to move
       - name: Unit & Integration tests
-        run: pnpm coverage -- --show-seed
+        run: pnpm coverage
         env:
           FORCE_COLOR: 1

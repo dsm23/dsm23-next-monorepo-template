@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
-import { afterEach } from "@jest/globals";
 import { cleanup, render } from "@testing-library/react";
+import { afterEach } from "vitest";
 import type { Queries, RenderOptions } from "@testing-library/react";
 
 afterEach(() => {

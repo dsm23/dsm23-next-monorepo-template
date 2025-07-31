@@ -1,8 +1,8 @@
 import type { ReactElement } from "react";
-import { describe, expect, it } from "@jest/globals";
 import { screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { render } from "@workspace/ui/test-utils";
+import { describe, expect, it } from "vitest";
 import type { Options } from "@testing-library/user-event";
 import {
   DropdownMenu,
