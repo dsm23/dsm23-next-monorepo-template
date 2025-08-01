@@ -14,7 +14,7 @@ const config = {
     "<TYPES>",
   ],
   // renovate: datasource=npm depName=typescript
-  importOrderTypeScriptVersion: "5.8.3",
+  importOrderTypeScriptVersion: "5.9.2",
 };
 
 export default config;
