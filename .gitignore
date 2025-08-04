@@ -65,10 +65,10 @@ lefthook-local.yml
 .prettiercache
 
 # Playwright
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
 
 # Storybook
 *storybook.log
