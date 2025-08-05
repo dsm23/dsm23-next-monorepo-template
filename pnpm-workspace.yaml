@@ -7,6 +7,7 @@ packages:
 
 publicHoistPattern:
   - "*eslint*"
+  - "*playwright*"
   - "*prettier*"
   - "*storybook*"
   - "*stylelint*"
