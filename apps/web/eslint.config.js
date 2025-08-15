@@ -1,4 +1,4 @@
-import { config as nextConfig } from "@workspace/eslint-config/next";
+import { config as nextConfig } from "@repo/eslint-config/next";
 
 /** @type {import("eslint").Linter.Config} */
 const config = [

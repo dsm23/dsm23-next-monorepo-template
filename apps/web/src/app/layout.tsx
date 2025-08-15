@@ -1,9 +1,9 @@
 import type { FunctionComponent, PropsWithChildren } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@workspace/ui/components/theme-provider";
+import { ThemeProvider } from "@repo/ui/components/theme-provider";
 import { ThemeSwitcher } from "~/components/theme-switcher";
 
-import "@workspace/ui/globals.css";
+import "@repo/ui/globals.css";
 
 import { headers } from "next/headers";
 
