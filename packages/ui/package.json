@@ -56,42 +56,42 @@
     "./postcss.config": "./postcss.config.js",
     "./components/button": {
       "import": {
-        "types": "./dist/es/button.d.mts",
-        "default": "./dist/es/button.mjs"
+        "types": "./dist/es/button.d.ts",
+        "default": "./dist/es/button.js"
       },
       "require": {
-        "types": "./dist/cjs/button.d.ts",
-        "default": "./dist/cjs/button.js"
+        "types": "./dist/cjs/button.d.cts",
+        "default": "./dist/cjs/button.cjs"
       }
     },
     "./components/dropdown-menu": {
       "import": {
-        "types": "./dist/es/dropdown-menu.d.mts",
-        "default": "./dist/es/dropdown-menu.mjs"
+        "types": "./dist/es/dropdown-menu.d.ts",
+        "default": "./dist/es/dropdown-menu.js"
       },
       "require": {
-        "types": "./dist/cjs/dropdown-menu.d.ts",
-        "default": "./dist/cjs/dropdown-menu.js"
+        "types": "./dist/cjs/dropdown-menu.d.cts",
+        "default": "./dist/cjs/dropdown-menu.cjs"
       }
     },
     "./components/theme-provider": {
       "import": {
-        "types": "./dist/es/theme-provider.d.mts",
-        "default": "./dist/es/theme-provider.mjs"
+        "types": "./dist/es/theme-provider.d.ts",
+        "default": "./dist/es/theme-provider.js"
       },
       "require": {
-        "types": "./dist/cjs/theme-provider.d.ts",
-        "default": "./dist/cjs/theme-provider.js"
+        "types": "./dist/cjs/theme-provider.d.cts",
+        "default": "./dist/cjs/theme-provider.cjs"
       }
     },
     "./lib/utils": {
       "import": {
-        "types": "./dist/es/utils.d.mts",
-        "default": "./dist/es/utils.mjs"
+        "types": "./dist/es/utils.d.ts",
+        "default": "./dist/es/utils.js"
       },
       "require": {
-        "types": "./dist/cjs/utils.d.ts",
-        "default": "./dist/cjs/utils.js"
+        "types": "./dist/cjs/utils.d.cts",
+        "default": "./dist/cjs/utils.cjs"
       }
     }
   }
