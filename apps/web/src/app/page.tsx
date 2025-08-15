@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Button } from "@workspace/ui/components/button";
+import { Button } from "@repo/ui/components/button";
 
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",

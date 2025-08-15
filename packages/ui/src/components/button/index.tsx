@@ -1,6 +1,6 @@
 import type { ComponentProps, FunctionComponent } from "react";
 import { Slot } from "@radix-ui/react-slot";
-import { cn } from "@workspace/ui/lib/utils";
+import { cn } from "@repo/ui/lib/utils";
 import { cva } from "class-variance-authority";
 import type { VariantProps } from "class-variance-authority";
 

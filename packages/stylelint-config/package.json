@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/stylelint-config",
+  "name": "@repo/stylelint-config",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
@@ -7,7 +7,7 @@
     ".": "./index.js"
   },
   "devDependencies": {
-    "@workspace/typescript-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "stylelint": "16.23.1",
     "stylelint-config-standard": "39.0.0",
     "stylelint-order": "7.0.0",

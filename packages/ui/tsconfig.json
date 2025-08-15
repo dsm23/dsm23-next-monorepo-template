@@ -1,12 +1,12 @@
 {
-  "extends": "@workspace/typescript-config/react-library",
+  "extends": "@repo/typescript-config/react-library",
   "compilerOptions": {
     "lib": ["dom", "ES2015"],
     "sourceMap": true,
     "types": ["jest", "node"],
     "baseUrl": ".",
     "paths": {
-      "@workspace/ui/*": ["./src/*"]
+      "@repo/ui/*": ["./src/*"]
     }
   },
   "include": ["."],
