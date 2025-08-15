@@ -161,10 +161,10 @@ importers:
         specifier: 19.1.7
         version: 19.1.7(@types/react@19.1.10)
       '@workspace/eslint-config':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/eslint-config
       '@workspace/stylelint-config':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/stylelint-config
       '@workspace/typescript-config':
         specifier: workspace:*
