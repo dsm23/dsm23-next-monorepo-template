@@ -23,7 +23,6 @@
     "@storybook/addon-docs": "9.1.2",
     "@storybook/addon-vitest": "9.1.2",
     "@storybook/nextjs-vite": "9.1.2",
-    "@tailwindcss/postcss": "4.1.12",
     "@types/node": "24.3.0",
     "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
@@ -31,10 +30,7 @@
     "@vitest/coverage-v8": "3.2.4",
     "@workspace/eslint-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
-    "eslint": "9.33.0",
-    "eslint-plugin-storybook": "9.1.2",
     "storybook": "9.1.2",
-    "tailwindcss": "4.1.12",
     "typescript": "5.9.2",
     "vitest": "3.2.4"
   }
