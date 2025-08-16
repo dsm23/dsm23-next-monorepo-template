@@ -46,7 +46,6 @@ WORKDIR /app
 # Don't run production as root
 RUN addgroup --system --gid 1001 nodejs \
   && adduser --system --uid 1001 nextjs
-USER nextjs
 
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
