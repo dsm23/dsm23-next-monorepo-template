@@ -137,5 +137,5 @@ async function readJsonFile(path) {
  * @returns {string}
  */
 function getBuildOutputDirectory(options) {
-  return options.buildOutputDirectory || "./apps/web/.next";
+  return options.buildOutputDirectory || ".next";
 }
