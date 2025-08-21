@@ -35,8 +35,7 @@ jobs:
       - name: Node setup
         uses: ./.github/actions/setup
 
-      # TODO: uncomment after copying patterns from https://github.com/vercel/turborepo/tree/main/examples/with-vitest
-      # - name: Smoke & Acceptance tests
-      #   run: pnpm run --filter storybook test --project storybook
-      #   env:
-      #     FORCE_COLOR: "1"
+      - name: Smoke & Acceptance tests
+        run: pnpm run --filter storybook test --project storybook
+        env:
+          FORCE_COLOR: "1"
