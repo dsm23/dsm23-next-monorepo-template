@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
   output: "standalone",
   outputFileTracingRoot: path.join(import.meta.dirname, "../../"),
 
+  typedRoutes: true,
+
   async rewrites() {
     return await [
       { source: "/healthz", destination: "/api/health" },
