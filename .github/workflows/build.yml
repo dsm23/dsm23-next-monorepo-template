@@ -33,4 +33,4 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build check
-        run: pnpm build
+        run: pnpm exec turbo run build:storybook build
