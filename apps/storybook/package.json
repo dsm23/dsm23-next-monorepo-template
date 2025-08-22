@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build:storybook": "storybook build",
-    "lint": "eslint ./.storybook --max-warnings 0",
+    "lint": "eslint ./.storybook --report-unused-disable-directives --max-warnings 0",
     "test": "vitest"
   },
   "dependencies": {
