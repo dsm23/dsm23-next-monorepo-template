@@ -22,6 +22,7 @@ export const config = [
     languageOptions: {
       ...pluginReact.configs.flat.recommended.languageOptions,
       globals: {
+        ...globals.nodeBuiltin,
         ...globals.serviceworker,
       },
     },
