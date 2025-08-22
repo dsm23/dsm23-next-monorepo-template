@@ -1,16 +1,13 @@
 import withBundleAnalyzer from "@next/bundle-analyzer";
 import type { NextConfig } from "next";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ["@repo/ui"],
 
   output: "standalone",
-  outputFileTracingRoot: path.join(dirname, "../../"),
+  outputFileTracingRoot: path.join(import.meta.dirname, "../../"),
 
   async rewrites() {
     return await [
