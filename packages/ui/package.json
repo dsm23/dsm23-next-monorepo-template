@@ -98,9 +98,9 @@
     "vitest": "3.2.4"
   },
   "peerDependencies": {
-    "@types/react": ">=19",
-    "@types/react-dom": ">=19",
-    "react": ">=19",
-    "react-dom": ">=19"
+    "@types/react": "19.1.11",
+    "@types/react-dom": "19.1.8",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   }
 }
