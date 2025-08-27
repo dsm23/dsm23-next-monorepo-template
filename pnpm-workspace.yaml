@@ -12,4 +12,6 @@ publicHoistPattern:
   - "*storybook*"
   - "*stylelint*"
 
+savePrefix: ""
+
 sideEffectsCache: false
