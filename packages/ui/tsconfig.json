@@ -1,9 +1,10 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@repo/typescript-config/react-library",
   "compilerOptions": {
-    "lib": ["dom", "ES2015"],
     "sourceMap": true,
-    "types": ["jest", "node"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "baseUrl": ".",
     "paths": {
       "@repo/ui/*": ["./src/*"]
