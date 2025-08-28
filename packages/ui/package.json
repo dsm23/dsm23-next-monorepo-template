@@ -58,6 +58,7 @@
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
     "lint:js": "eslint . --max-warnings 0",
     "lint": "run-p lint:js lint:css",
+    "check-types": "tsc --noEmit",
     "test": "vitest",
     "coverage": "vitest --coverage"
   },
