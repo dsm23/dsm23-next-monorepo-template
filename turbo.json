@@ -19,18 +19,18 @@
       "dependsOn": ["^lint"]
     },
     "check-types": {
-      "dependsOn": ["^check-types", "transit", "@repo/ui#build"]
-    },
-    "transit": {
-      "dependsOn": ["^transit"]
+      "dependsOn": ["^check-types"]
     },
     "e2e": {
-      "dependsOn": ["^e2e", "transit", "@repo/ui#build"],
+      "dependsOn": ["^e2e"],
       "outputs": ["test-results/**"],
       "env": ["PLAYWRIGHT_BROWSERS_PATH"]
     },
     "test": {
       "dependsOn": ["^test"]
+    },
+    "transit": {
+      "dependsOn": ["^transit"]
     },
     "dev": {
       "cache": false,
