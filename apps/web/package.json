@@ -10,7 +10,7 @@
     "lint:js": "eslint . --report-unused-disable-directives --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
     "lint": "run-p lint:js lint:css",
-    "check-types": "next typegen &&  tsc --noEmit",
+    "check-types": "next typegen && tsc --noEmit",
     "e2e": "playwright test"
   },
   "dependencies": {
