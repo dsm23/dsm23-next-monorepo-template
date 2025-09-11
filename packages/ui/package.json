@@ -53,8 +53,9 @@
   "scripts": {
     "build": "bunchee",
     "dev": "bunchee --watch",
+    "lint:bunchee": "bunchee lint",
     "lint:js": "eslint . --max-warnings 0",
-    "lint": "run-p lint:js",
+    "lint": "run-p lint:bunchee lint:js",
     "check-types": "tsc --noEmit",
     "test": "vitest",
     "coverage": "vitest --coverage"
