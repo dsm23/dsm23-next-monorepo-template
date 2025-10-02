@@ -38,7 +38,7 @@
     "npm-run-all2": "8.0.4",
     "prettier-plugin-css-order": "2.1.2",
     "prettier-plugin-tailwindcss": "0.6.14",
-    "tailwindcss": "4.1.13",
+    "tailwindcss": "4.1.14",
     "typed-query-selector": "2.12.0",
     "typescript": "5.9.3"
   }
