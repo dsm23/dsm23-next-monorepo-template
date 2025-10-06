@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@axe-core/playwright": "4.10.2",
-    "@playwright/test": "1.55.1",
+    "@playwright/test": "1.56.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/postcss-config": "workspace:*",
     "@repo/stylelint-config": "workspace:*",
