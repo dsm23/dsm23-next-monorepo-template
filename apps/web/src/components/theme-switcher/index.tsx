@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Button } from "@repo/ui/components/button";
 import {
@@ -10,16 +9,12 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@repo/ui/components/dropdown-menu";
+import useMounted from "@repo/ui/hooks/use-mounted";
 import { Laptop, Moon, Sun } from "lucide-react";
 
 const ThemeSwitcher = () => {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useMounted();
   const { theme, setTheme } = useTheme();
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   if (!mounted) {
     return null;
@@ -28,7 +23,7 @@ const ThemeSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm">
+        <Button variant="ghost" size={"sm"}>
           <span className="sr-only">Theme switcher</span>
           {theme === "light" ? (
             <Sun key="light" className="text-muted-foreground size-4" />
