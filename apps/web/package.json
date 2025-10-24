@@ -23,7 +23,7 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.10.2",
+    "@axe-core/playwright": "4.11.0",
     "@playwright/test": "1.56.1",
     "@repo/eslint-config": "workspace:*",
     "@repo/postcss-config": "workspace:*",
