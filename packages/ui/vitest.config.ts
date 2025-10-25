@@ -6,7 +6,6 @@ const config = defineConfig({
   plugins: [react(), tsconfigPaths()],
   test: {
     coverage: {
-      all: true,
       include: ["src/**/*.[jt]s?(x)"],
       exclude: [
         "src/**/*.stories.[jt]s?(x)",
