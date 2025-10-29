@@ -4,6 +4,10 @@
     "build:storybook": {
       "dependsOn": ["^build", "^build:storybook"],
       "outputs": [".next/**", "!.next/cache/**", "storybook-static/**"]
+    },
+    "test": {
+      "dependsOn": ["transit", "@repo/ui#build"],
+      "env": ["PLAYWRIGHT_BROWSERS_PATH"]
     }
   }
 }
