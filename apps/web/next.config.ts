@@ -1,4 +1,3 @@
-import withBundleAnalyzer from "@next/bundle-analyzer";
 import type { NextConfig } from "next";
 import path from "node:path";
 
@@ -21,14 +20,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default () => {
-  const plugins = [
-    withBundleAnalyzer({ enabled: Boolean(process.env.ANALYZE) }),
-  ];
-
-  const config = plugins.reduce((acc, next) => next(acc), {
-    ...nextConfig,
-  });
-
-  return config;
-};
+export default nextConfig;
