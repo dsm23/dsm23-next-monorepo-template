@@ -324,8 +324,8 @@ importers:
         version: 3.4.0
     devDependencies:
       '@fast-check/vitest':
-        specifier: 0.2.3
-        version: 0.2.3(vitest@4.0.15)
+        specifier: 0.2.4
+        version: 0.2.4(vitest@4.0.15)
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
@@ -882,8 +882,8 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fast-check/vitest@0.2.3':
-    resolution: {integrity: sha512-BBjiZOiCvKRfoeuWz62ZpjFfuaLEKSDWXl7Fkli9FBNJGUzBDv7PZdXPGbrUiaTreIFs9I1INrlQgboRBA3H1Q==}
+  '@fast-check/vitest@0.2.4':
+    resolution: {integrity: sha512-Ilcr+JAIPhb1s6FRm4qoglQYSGXXrS+zAupZeNuWAA3qHVGDA1d1Gb84Hb/+otL3GzVZjFJESg5/1SfIvrgssA==}
     peerDependencies:
       vitest: ^1 || ^2 || ^3 || ^4
 
@@ -5387,7 +5387,7 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@fast-check/vitest@0.2.3(vitest@4.0.15)':
+  '@fast-check/vitest@0.2.4(vitest@4.0.15)':
     dependencies:
       fast-check: 4.1.1
       vitest: 4.0.15(@types/node@24.10.1)(@vitest/browser-playwright@4.0.15)(jiti@2.6.1)(jsdom@27.2.0(postcss@8.5.6))(lightningcss@1.30.2)(terser@5.43.1)
