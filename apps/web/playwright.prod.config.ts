@@ -1,7 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
-import { defineConfig, devices } from "@playwright/test";
+import { defineConfig } from "@playwright/test";
 import dotenv from "dotenv";
+import config from "./playwright.config";
 
 const PORT = process.env.PORT ?? "3000";
 
@@ -28,36 +29,17 @@ injectFromEnvFile();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: "./playwright-tests",
-  fullyParallel: true,
-  forbidOnly: Boolean(process.env.CI),
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
-  reporter: process.env.CI ? "blob" : "html",
+  ...config,
   use: {
+    ...config.use,
     baseURL: `http://localhost:${PORT}`,
-
-    trace: "on-first-retry",
   },
-  projects: [
-    {
-      name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
-    },
-
-    {
-      name: "firefox",
-      use: { ...devices["Desktop Firefox"] },
-    },
-
-    {
-      name: "webkit",
-      use: { ...devices["Desktop Safari"] },
-    },
-  ],
-  tag: "@dev",
+  tag: "@prod",
   webServer: {
-    command: "pnpm run dev",
+    command: `pnpm run build \\
+        && ln -s "$(pwd)/public" .next/standalone/apps/web/ \\
+        && ln -s "$(pwd)/.next/static" .next/standalone/apps/web/.next \\
+        && PORT=${PORT} HOSTNAME=localhost node .next/standalone/apps/web/server.js`,
     url: `http://localhost:${PORT}`,
     reuseExistingServer: !process.env.CI,
   },
