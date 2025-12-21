@@ -6,9 +6,6 @@
     },
     "dev": {
       "with": ["@repo/ui#dev"]
-    },
-    "e2e": {
-      "dependsOn": ["^e2e", "transit", "@repo/ui#build"]
     }
   }
 }
