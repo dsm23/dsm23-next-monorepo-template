@@ -1,3 +1,5 @@
+blockExoticSubdeps: true
+
 onlyBuiltDependencies:
   - lefthook
 
@@ -15,3 +17,5 @@ publicHoistPattern:
 savePrefix: ""
 
 sideEffectsCache: false
+
+trustPolicy: no-downgrade
