@@ -1,8 +1,8 @@
 {
   "extends": ["//"],
   "tasks": {
-    "build:storybook": {
-      "dependsOn": ["^build", "^build:storybook"],
+    "build": {
+      "dependsOn": ["transit", "@repo/ui#build"],
       "outputs": [".next/**", "!.next/cache/**", "storybook-static/**"]
     },
     "test": {

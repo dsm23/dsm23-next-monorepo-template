@@ -16,6 +16,7 @@ export const config = defineConfig(
         ...globals.browser,
       },
     },
+    settings: { react: { version: "detect" } },
   },
   reactHooks.configs.flat["recommended-latest"],
 );

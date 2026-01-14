@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "build": "storybook build",
     "dev": "storybook dev -p 6006",
-    "build:storybook": "storybook build",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input",
     "lint:js": "eslint ./.storybook --report-unused-disable-directives --max-warnings 0",
     "lint": "run-p lint:js lint:css",

@@ -3,13 +3,11 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*", "!**/*.stories.{tsx,jsx,mdx}"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "build:storybook": {},
     "coverage": {
-      "dependsOn": ["^coverage"],
       "outputs": ["coverage/**"]
     },
     "lint": {},
@@ -17,13 +15,9 @@
     "lint:lint-staged": {
       "dependsOn": ["^lint"]
     },
-    "check-types": {
-      "dependsOn": ["^check-types"]
-    },
+    "check-types": {},
     "e2e": {
-      "dependsOn": ["^e2e"],
-      "outputs": ["test-results/**"],
-      "env": ["PLAYWRIGHT_BROWSERS_PATH"]
+      "outputs": ["test-results/**"]
     },
     "test": {
       "dependsOn": ["^test"]
