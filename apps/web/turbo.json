@@ -8,7 +8,8 @@
       "with": ["@repo/ui#dev"]
     },
     "e2e": {
-      "dependsOn": ["^e2e", "transit", "@repo/ui#build"]
+      "dependsOn": ["^e2e", "transit", "@repo/ui#build"],
+      "env": ["CI", "PLAYWRIGHT_BROWSERS_PATH", "PORT"]
     }
   }
 }
