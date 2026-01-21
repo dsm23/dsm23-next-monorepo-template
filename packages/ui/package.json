@@ -90,7 +90,7 @@
     "@types/node": "24.10.9",
     "@vitejs/plugin-react": "5.1.2",
     "@vitest/coverage-v8": "4.0.17",
-    "bunchee": "6.9.3",
+    "bunchee": "6.9.4",
     "jsdom": "27.4.0",
     "npm-run-all2": "8.0.4",
     "prettier-plugin-css-order": "2.2.0",
