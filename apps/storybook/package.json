@@ -28,10 +28,10 @@
     "@repo/stylelint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@storybook/addon-a11y": "10.2.1",
-    "@storybook/addon-docs": "10.2.1",
-    "@storybook/addon-vitest": "10.2.1",
-    "@storybook/nextjs-vite": "10.2.1",
+    "@storybook/addon-a11y": "10.2.2",
+    "@storybook/addon-docs": "10.2.2",
+    "@storybook/addon-vitest": "10.2.2",
+    "@storybook/nextjs-vite": "10.2.2",
     "@types/node": "24.10.9",
     "@types/react": "19.2.10",
     "@types/react-dom": "19.2.3",
@@ -39,7 +39,7 @@
     "@vitest/coverage-v8": "4.0.18",
     "npm-run-all2": "8.0.4",
     "playwright": "1.58.0",
-    "storybook": "10.2.1",
+    "storybook": "10.2.2",
     "typescript": "5.9.3",
     "vitest": "4.0.18"
   }
