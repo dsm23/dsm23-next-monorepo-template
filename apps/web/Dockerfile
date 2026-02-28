@@ -8,7 +8,7 @@ FROM node:24.14.0-alpine@sha256:7fddd9ddeae8196abf4a3ef2de34e11f7b1a722119f91f28
 # RUN npm install -g corepack@latest
 
 # renovate: datasource=npm depName=turbo
-ARG TURBO_VERSION="2.8.10"
+ARG TURBO_VERSION="2.8.11"
 
 FROM base AS builder
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why gcompat might be needed.
