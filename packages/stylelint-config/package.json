@@ -7,10 +7,12 @@
     ".": "./index.js"
   },
   "devDependencies": {
-    "stylelint": "17.4.0",
     "stylelint-config-standard": "40.0.0",
     "stylelint-order": "7.0.1",
     "stylelint-selector-bem-pattern": "4.0.1"
+  },
+  "peerDependencies": {
+    "stylelint": "17.4.0"
   },
   "publishConfig": {
     "access": "public"

@@ -64,7 +64,6 @@ lefthook-local.yml
 .eslintcache
 .eslintmdcache
 .stylelintcache
-.prettiercache
 
 # Playwright
 test-results/

@@ -1,5 +1,7 @@
 blockExoticSubdeps: true
 
+nodeLinker: isolated
+
 onlyBuiltDependencies:
   - lefthook
 
@@ -8,11 +10,8 @@ packages:
   - "packages/*"
 
 publicHoistPattern:
-  - "*eslint*"
   - "*playwright*"
-  - "*prettier*"
   - "*storybook*"
-  - "*stylelint*"
 
 savePrefix: ""
 
