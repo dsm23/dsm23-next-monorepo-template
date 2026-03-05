@@ -34,9 +34,10 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "dotenv": "17.3.1",
+    "eslint": "9.39.3",
     "npm-run-all2": "8.0.4",
-    "prettier-plugin-css-order": "2.2.0",
-    "prettier-plugin-tailwindcss": "0.7.2",
+    "playwright": "1.58.2",
+    "stylelint": "17.4.0",
     "tailwindcss": "4.2.1",
     "typed-query-selector": "2.12.1",
     "typescript": "5.9.3"

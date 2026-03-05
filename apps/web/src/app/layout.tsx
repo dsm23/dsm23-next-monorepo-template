@@ -1,11 +1,10 @@
 import type { FunctionComponent, PropsWithChildren } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
+import { headers } from "next/headers";
 import { ThemeProvider } from "@repo/ui/components/theme-provider";
-import { ThemeSwitcher } from "~/components/theme-switcher";
 
 import "./styles.css";
-
-import { headers } from "next/headers";
+import { ThemeSwitcher } from "~/components/theme-switcher";
 
 const fontSans = Geist({
   subsets: ["latin"],

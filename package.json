@@ -8,8 +8,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "check-types": "turbo check-types",
-    "fmt": "prettier --write .",
-    "fmt.check": "prettier --check .",
+    "fmt": "oxfmt --write .",
+    "fmt.check": "oxfmt --check .",
     "test": "turbo test",
     "coverage": "turbo coverage",
     "e2e": "turbo e2e"
@@ -18,10 +18,9 @@
     "@commitlint/cli": "20.4.2",
     "@commitlint/config-conventional": "20.4.2",
     "@commitlint/types": "20.4.0",
-    "@ianvs/prettier-plugin-sort-imports": "4.7.1",
     "@repo/typescript-config": "workspace:*",
     "lefthook": "2.1.2",
-    "prettier": "3.8.1",
+    "oxfmt": "0.36.0",
     "turbo": "2.8.12",
     "typescript": "5.9.3"
   },
