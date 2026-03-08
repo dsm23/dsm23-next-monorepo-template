@@ -83,7 +83,7 @@
     "@fast-check/vitest": "0.2.4",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@storybook/nextjs-vite": "10.2.14",
+    "@storybook/nextjs-vite": "10.2.15",
     "@testing-library/jest-dom": "6.9.1",
     "@testing-library/react": "16.3.2",
     "@testing-library/user-event": "14.6.1",
@@ -94,7 +94,7 @@
     "eslint": "9.39.3",
     "jsdom": "28.1.0",
     "npm-run-all2": "8.0.4",
-    "storybook": "10.2.14",
+    "storybook": "10.2.15",
     "typescript": "5.9.3",
     "vite-tsconfig-paths": "6.1.1",
     "vitest": "4.0.18"
