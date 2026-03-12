@@ -80,7 +80,7 @@
     "tailwind-merge": "3.5.0"
   },
   "devDependencies": {
-    "@fast-check/vitest": "0.2.4",
+    "@fast-check/vitest": "0.3.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@storybook/nextjs-vite": "10.2.16",
