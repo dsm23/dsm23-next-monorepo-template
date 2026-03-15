@@ -89,7 +89,7 @@
     "@testing-library/user-event": "14.6.1",
     "@types/node": "24.12.0",
     "@vitejs/plugin-react": "5.2.0",
-    "@vitest/coverage-v8": "4.0.18",
+    "@vitest/coverage-v8": "4.1.0",
     "bunchee": "6.9.4",
     "eslint": "9.39.4",
     "jsdom": "28.1.0",
@@ -97,7 +97,7 @@
     "storybook": "10.2.17",
     "typescript": "5.9.3",
     "vite-tsconfig-paths": "6.1.1",
-    "vitest": "4.0.18"
+    "vitest": "4.1.0"
   },
   "peerDependencies": {
     "@types/react": "19.2.14",
