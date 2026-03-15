@@ -88,7 +88,7 @@
     "@testing-library/react": "16.3.2",
     "@testing-library/user-event": "14.6.1",
     "@types/node": "24.12.0",
-    "@vitejs/plugin-react": "5.1.4",
+    "@vitejs/plugin-react": "5.2.0",
     "@vitest/coverage-v8": "4.0.18",
     "bunchee": "6.9.4",
     "eslint": "9.39.4",
