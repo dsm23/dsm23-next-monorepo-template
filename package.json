@@ -20,7 +20,7 @@
     "@commitlint/types": "20.4.3",
     "@repo/typescript-config": "workspace:*",
     "lefthook": "2.1.4",
-    "oxfmt": "0.38.0",
+    "oxfmt": "0.39.0",
     "turbo": "2.8.16",
     "typescript": "5.9.3"
   },
