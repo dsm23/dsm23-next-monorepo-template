@@ -92,7 +92,7 @@
     "@vitest/coverage-v8": "4.1.0",
     "bunchee": "6.9.4",
     "eslint": "9.39.4",
-    "jsdom": "28.1.0",
+    "jsdom": "29.0.0",
     "npm-run-all2": "8.0.4",
     "storybook": "10.2.19",
     "typescript": "5.9.3",
