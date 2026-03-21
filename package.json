@@ -21,7 +21,7 @@
     "@repo/typescript-config": "workspace:*",
     "lefthook": "2.1.4",
     "oxfmt": "0.41.0",
-    "turbo": "2.8.17",
+    "turbo": "2.8.19",
     "typescript": "5.9.3"
   },
   "engines": {
