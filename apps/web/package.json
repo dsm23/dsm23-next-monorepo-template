@@ -37,7 +37,7 @@
     "eslint": "9.39.4",
     "npm-run-all2": "8.0.4",
     "playwright": "1.58.2",
-    "stylelint": "17.4.0",
+    "stylelint": "17.5.0",
     "tailwindcss": "4.2.2",
     "typed-query-selector": "2.12.1",
     "typescript": "5.9.3"
