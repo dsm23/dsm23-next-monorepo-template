@@ -41,7 +41,7 @@
     "npm-run-all2": "8.0.4",
     "playwright": "1.58.2",
     "storybook": "10.3.0",
-    "stylelint": "17.4.0",
+    "stylelint": "17.5.0",
     "typescript": "5.9.3",
     "vitest": "4.1.0"
   }
