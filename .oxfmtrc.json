@@ -3,6 +3,20 @@
   "printWidth": 80,
   "ignorePatterns": ["pnpm-lock.yaml"],
   "sortPackageJson": false,
+  "options": {
+    "sortImports": {
+      "newlinesBetween": false,
+      "groups": [
+        ["value-builtin", "type-builtin"],
+        ["value-external", "type-external"],
+        ["value-internal", "type-internal"],
+        ["value-parent", "value-sibling", "value-index"],
+        "unknown",
+        { "newlinesBetween": true },
+        "style"
+      ]
+    }
+  },
   "overrides": [
     {
       "files": ["**/packages/ui/**"],

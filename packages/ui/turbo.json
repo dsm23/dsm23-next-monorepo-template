@@ -3,6 +3,12 @@
   "tasks": {
     "build": {
       "outputs": ["dist/**"]
+    },
+    "check-types": {
+      "dependsOn": ["transit", "@repo/oxlint-config#build"]
+    },
+    "lint": {
+      "dependsOn": ["transit", "@repo/oxlint-config#build"]
     }
   }
 }
