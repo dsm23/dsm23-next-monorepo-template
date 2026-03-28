@@ -6,54 +6,38 @@
   "exports": {
     "./base": {
       "import": {
-        "types": "./dist/es/base.d.ts",
-        "default": "./dist/es/base.js"
-      },
-      "require": {
-        "types": "./dist/cjs/base.d.cts",
-        "default": "./dist/cjs/base.cjs"
+        "types": "./dist/base.d.mts",
+        "default": "./dist/base.mjs"
       }
     },
     "./next": {
       "import": {
-        "types": "./dist/es/next.d.ts",
-        "default": "./dist/es/next.js"
-      },
-      "require": {
-        "types": "./dist/cjs/next.d.cts",
-        "default": "./dist/cjs/next.cjs"
+        "types": "./dist/next.d.mts",
+        "default": "./dist/next.mjs"
       }
     },
     "./react": {
       "import": {
-        "types": "./dist/es/react.d.ts",
-        "default": "./dist/es/react.js"
-      },
-      "require": {
-        "types": "./dist/cjs/react.d.cts",
-        "default": "./dist/cjs/react.cjs"
+        "types": "./dist/react.d.mts",
+        "default": "./dist/react.mjs"
       }
     },
     "./storybook": {
       "import": {
-        "types": "./dist/es/storybook.d.ts",
-        "default": "./dist/es/storybook.js"
-      },
-      "require": {
-        "types": "./dist/cjs/storybook.d.cts",
-        "default": "./dist/cjs/storybook.cjs"
+        "types": "./dist/storybook.d.mts",
+        "default": "./dist/storybook.mjs"
       }
     }
   },
   "scripts": {
-    "build": "bunchee",
-    "dev": "bunchee --watch",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "bunchee": "6.9.4",
     "eslint-plugin-storybook": "10.3.3",
+    "tsdown": "0.21.7",
     "typescript": "6.0.2"
   },
   "peerDependencies": {

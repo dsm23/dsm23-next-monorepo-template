@@ -11,61 +11,40 @@
   "exports": {
     "./components/button": {
       "import": {
-        "types": "./dist/es/button.d.ts",
-        "default": "./dist/es/button.js"
-      },
-      "require": {
-        "types": "./dist/cjs/button.d.cts",
-        "default": "./dist/cjs/button.cjs"
+        "types": "./dist/components/button/index.d.mts",
+        "default": "./dist/components/button/index.mjs"
       }
     },
     "./components/dropdown-menu": {
       "import": {
-        "types": "./dist/es/dropdown-menu.d.ts",
-        "default": "./dist/es/dropdown-menu.js"
-      },
-      "require": {
-        "types": "./dist/cjs/dropdown-menu.d.cts",
-        "default": "./dist/cjs/dropdown-menu.cjs"
+        "types": "./dist/components/dropdown-menu/index.mts",
+        "default": "./dist/components/dropdown-menu/index.mjs"
       }
     },
     "./components/theme-provider": {
       "import": {
-        "types": "./dist/es/theme-provider.d.ts",
-        "default": "./dist/es/theme-provider.js"
-      },
-      "require": {
-        "types": "./dist/cjs/theme-provider.d.cts",
-        "default": "./dist/cjs/theme-provider.cjs"
+        "types": "./dist/components/theme-provider/index.mts",
+        "default": "./dist/components/theme-provider/index.mjs"
       }
     },
     "./hooks/use-mounted": {
       "import": {
-        "types": "./dist/es/use-mounted.d.ts",
-        "default": "./dist/es/use-mounted.js"
-      },
-      "require": {
-        "types": "./dist/cjs/use-mounted.d.cts",
-        "default": "./dist/cjs/use-mounted.cjs"
+        "types": "./dist/hooks/use-mounted/index.mts",
+        "default": "./dist/hooks/use-mounted/index.mjs"
       }
     },
     "./lib/utils": {
       "import": {
-        "types": "./dist/es/utils.d.ts",
-        "default": "./dist/es/utils.js"
-      },
-      "require": {
-        "types": "./dist/cjs/utils.d.cts",
-        "default": "./dist/cjs/utils.cjs"
+        "types": "./dist/lib/utils.mts",
+        "default": "./dist/lib/utils.mjs"
       }
     }
   },
   "scripts": {
-    "build": "bunchee",
-    "dev": "bunchee --watch",
-    "lint:bunchee": "bunchee lint",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "lint:js": "oxlint . --max-warnings 0",
-    "lint": "run-p lint:bunchee lint:js",
+    "lint": "run-p lint:js",
     "check-types": "tsc --noEmit",
     "test": "vitest",
     "coverage": "vitest --coverage"
@@ -90,13 +69,13 @@
     "@types/node": "24.12.0",
     "@vitejs/plugin-react": "6.0.1",
     "@vitest/coverage-v8": "4.1.1",
-    "bunchee": "6.9.4",
     "eslint": "9.39.4",
     "jsdom": "29.0.1",
     "npm-run-all2": "8.0.4",
     "oxlint": "1.57.0",
     "oxlint-tsgolint": "0.17.4",
     "storybook": "10.3.3",
+    "tsdown": "0.21.7",
     "typescript": "6.0.2",
     "vite-tsconfig-paths": "6.1.1",
     "vitest": "4.1.1"
@@ -106,5 +85,55 @@
     "@types/react-dom": "19.2.3",
     "react": "19.2.4",
     "react-dom": "19.2.4"
+  },
+  "inlinedDependencies": {
+    "@babel/runtime": "7.29.2",
+    "@fast-check/vitest": "0.3.0",
+    "@joshwooding/vite-plugin-react-docgen-typescript": "0.6.4",
+    "@jridgewell/sourcemap-codec": "1.5.5",
+    "@oxc-project/types": "0.115.0",
+    "@rolldown/pluginutils": "1.0.0-rc.8",
+    "@rollup/pluginutils": "5.3.0",
+    "@storybook/builder-vite": "10.3.3",
+    "@storybook/global": "5.0.0",
+    "@storybook/nextjs-vite": "10.3.3",
+    "@storybook/react": "10.3.3",
+    "@storybook/react-vite": "10.3.3",
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/react": "16.3.2",
+    "@testing-library/user-event": "14.6.1",
+    "@vitest/expect": [
+      "3.2.4",
+      "4.1.1"
+    ],
+    "@vitest/pretty-format": "4.1.1",
+    "@vitest/runner": "4.1.1",
+    "@vitest/snapshot": "4.1.1",
+    "@vitest/spy": [
+      "3.2.4",
+      "4.1.1"
+    ],
+    "@vitest/utils": "4.1.1",
+    "ansi-regex": "5.0.1",
+    "ansi-styles": "5.2.0",
+    "aria-query": "5.3.0",
+    "chai": "6.2.2",
+    "dequal": "2.0.3",
+    "dom-accessibility-api": "0.5.16",
+    "esbuild": "0.27.4",
+    "fast-check": "4.6.0",
+    "lz-string": "1.5.0",
+    "magic-string": "0.30.21",
+    "next": "16.2.1",
+    "postcss": "8.5.8",
+    "pretty-format": "27.5.1",
+    "pure-rand": "8.3.0",
+    "react-is": "17.0.2",
+    "rolldown": "1.0.0-rc.8",
+    "storybook": "10.3.3",
+    "tinyrainbow": "3.1.0",
+    "vite": "8.0.0-beta.18",
+    "vite-plugin-storybook-nextjs": "3.2.4",
+    "vitest": "4.1.1"
   }
 }
