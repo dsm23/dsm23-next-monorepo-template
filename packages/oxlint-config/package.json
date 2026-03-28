@@ -1,0 +1,63 @@
+{
+  "name": "@repo/oxlint-config",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./base": {
+      "import": {
+        "types": "./dist/es/base.d.ts",
+        "default": "./dist/es/base.js"
+      },
+      "require": {
+        "types": "./dist/cjs/base.d.cts",
+        "default": "./dist/cjs/base.cjs"
+      }
+    },
+    "./next": {
+      "import": {
+        "types": "./dist/es/next.d.ts",
+        "default": "./dist/es/next.js"
+      },
+      "require": {
+        "types": "./dist/cjs/next.d.cts",
+        "default": "./dist/cjs/next.cjs"
+      }
+    },
+    "./react": {
+      "import": {
+        "types": "./dist/es/react.d.ts",
+        "default": "./dist/es/react.js"
+      },
+      "require": {
+        "types": "./dist/cjs/react.d.cts",
+        "default": "./dist/cjs/react.cjs"
+      }
+    },
+    "./storybook": {
+      "import": {
+        "types": "./dist/es/storybook.d.ts",
+        "default": "./dist/es/storybook.js"
+      },
+      "require": {
+        "types": "./dist/cjs/storybook.d.cts",
+        "default": "./dist/cjs/storybook.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "bunchee",
+    "dev": "bunchee --watch",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "bunchee": "6.9.4",
+    "eslint-plugin-storybook": "10.3.2",
+    "typescript": "6.0.2"
+  },
+  "peerDependencies": {
+    "oxlint": "1.57.0",
+    "oxlint-tsgolint": "0.17.4"
+  }
+}

@@ -11,10 +11,10 @@ Object.defineProperty(window, "matchMedia", {
         matches: false,
         media: query as string,
         onchange: null,
-        addListener: vi.fn(), // deprecated
-        removeListener: vi.fn(), // deprecated
-        addEventListener: vi.fn(),
-        removeEventListener: vi.fn(),
+        addListener: vi.fn<() => void>(), // deprecated
+        removeListener: vi.fn<() => void>(), // deprecated
+        addEventListener: vi.fn<() => void>(),
+        removeEventListener: vi.fn<() => void>(),
         dispatchEvent: vi.fn(() => false),
       }) satisfies MediaQueryList,
   ),

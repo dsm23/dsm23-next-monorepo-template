@@ -1,7 +1,8 @@
-/* eslint-disable no-constant-binary-expression */
+/* oxlint-disable no-constant-binary-expression */
+/* oxlint-disable typescript/no-unnecessary-condition */
 
 import { describe, expect, it } from "vitest";
-import { cn } from "./utils.js";
+import { cn } from "./utils";
 
 describe("utils", () => {
   describe("cn", () => {
