@@ -61,8 +61,6 @@ yarn-error.log*
 lefthook-local.yml
 
 # Cache Files
-.eslintcache
-.eslintmdcache
 .stylelintcache
 
 # Playwright
