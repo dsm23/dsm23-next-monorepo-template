@@ -53,7 +53,7 @@
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "bunchee": "6.9.4",
-    "eslint-plugin-storybook": "10.3.2",
+    "eslint-plugin-storybook": "10.3.3",
     "typescript": "6.0.2"
   },
   "peerDependencies": {
