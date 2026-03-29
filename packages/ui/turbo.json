@@ -2,6 +2,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
+      "dependsOn": ["transit", "@repo/oxlint-config#build"],
       "outputs": ["dist/**"]
     },
     "check-types": {
