@@ -13,6 +13,9 @@
     "e2e": {
       "dependsOn": ["transit", "@repo/ui#build"],
       "env": ["CI", "PLAYWRIGHT_BROWSERS_PATH", "PORT"]
+    },
+    "lint": {
+      "dependsOn": ["transit", "@repo/ui#build", "@repo/oxlint-config#build"]
     }
   }
 }
