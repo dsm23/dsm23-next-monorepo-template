@@ -3,41 +3,19 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
-  "exports": {
-    "./base": {
-      "import": {
-        "types": "./dist/base.d.mts",
-        "default": "./dist/base.mjs"
-      }
-    },
-    "./next": {
-      "import": {
-        "types": "./dist/next.d.mts",
-        "default": "./dist/next.mjs"
-      }
-    },
-    "./react": {
-      "import": {
-        "types": "./dist/react.d.mts",
-        "default": "./dist/react.mjs"
-      }
-    },
-    "./storybook": {
-      "import": {
-        "types": "./dist/storybook.d.mts",
-        "default": "./dist/storybook.mjs"
-      }
-    }
+  "imports": {
+    "#base": "./src/base.ts",
+    "#react": "./src/react.ts"
   },
-  "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch",
-    "check-types": "tsc --noEmit"
+  "exports": {
+    "./base": "./src/base.ts",
+    "./next": "./src/next.ts",
+    "./react": "./src/react.ts",
+    "./storybook": "./src/storybook.ts"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "eslint-plugin-storybook": "10.3.3",
-    "tsdown": "0.21.7",
     "typescript": "6.0.2"
   },
   "peerDependencies": {

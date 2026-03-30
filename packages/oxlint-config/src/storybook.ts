@@ -1,5 +1,5 @@
 import { defineConfig } from "oxlint";
-import baseConfig from "./base";
+import baseConfig from "#base";
 
 export default defineConfig({
   extends: [baseConfig],

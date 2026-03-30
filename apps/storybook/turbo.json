@@ -5,9 +5,6 @@
       "dependsOn": ["transit", "@repo/ui#build"],
       "outputs": [".next/**", "!.next/cache/**", "storybook-static/**"]
     },
-    "lint": {
-      "dependsOn": ["transit", "@repo/oxlint-config#build"]
-    },
     "test": {
       "dependsOn": ["transit", "@repo/ui#build"],
       "env": ["PLAYWRIGHT_BROWSERS_PATH"]
