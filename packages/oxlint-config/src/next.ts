@@ -1,5 +1,5 @@
 import { defineConfig } from "oxlint";
-import reactConfig from "./react";
+import reactConfig from "#react";
 
 export default defineConfig({
   extends: [reactConfig],
