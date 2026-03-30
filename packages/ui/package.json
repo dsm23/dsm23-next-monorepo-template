@@ -72,7 +72,7 @@
     "jsdom": "29.0.1",
     "npm-run-all2": "8.0.4",
     "oxlint": "1.57.0",
-    "oxlint-tsgolint": "0.17.4",
+    "oxlint-tsgolint": "0.18.0",
     "storybook": "10.3.3",
     "tsdown": "0.21.7",
     "typescript": "6.0.2",
