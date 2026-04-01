@@ -1,6 +1,6 @@
 import { describe, expect } from "vitest";
 import { fc, it } from "@fast-check/vitest";
-import { cn } from "./utils";
+import { cn } from ".";
 
 describe("utils", () => {
   describe("cn", () => {

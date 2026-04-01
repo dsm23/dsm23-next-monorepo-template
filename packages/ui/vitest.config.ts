@@ -10,7 +10,7 @@ const config = defineConfig({
     coverage: {
       include: ["src/**/*.[jt]s?(x)"],
       exclude: [
-        "src/**/*.stories.[jt]s?(x)",
+        "src/**/{*.,}stories.[jt]s?(x)",
         "src/test-utils/**",
         "src/mocks/**",
         "**/node_modules/**",
