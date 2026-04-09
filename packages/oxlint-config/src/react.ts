@@ -5,6 +5,19 @@ export default defineConfig({
   extends: [baseConfig],
   plugins: ["jsx-a11y", "react"],
   rules: {
+    "no-restricted-imports": [
+      "warn",
+      {
+        paths: [
+          {
+            name: "react",
+            importNames: ["default"],
+            message:
+              "Named * React import is not allowed. Please import what you need from React with Named Imports",
+          },
+        ],
+      },
+    ],
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/anchor-has-content": "off",
     "jsx-a11y/heading-has-content": "off",

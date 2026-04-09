@@ -72,5 +72,6 @@ export default defineConfig({
         additionalTestBlockFunctions: ["fc.property"],
       },
     ],
+    "vitest/require-test-timeout": "off",
   },
 });
