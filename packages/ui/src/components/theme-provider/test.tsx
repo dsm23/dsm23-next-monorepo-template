@@ -5,17 +5,17 @@ import { ThemeProvider } from ".";
 // https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
 Object.defineProperty(window, "matchMedia", {
   writable: true,
-  value: vi.fn().mockImplementation(
+  value: vi.fn<(query: string) => MediaQueryList>().mockImplementation(
     (query) =>
       ({
         matches: false,
-        media: query as string,
+        media: query,
         onchange: null,
         addListener: vi.fn<() => void>(), // deprecated
         removeListener: vi.fn<() => void>(), // deprecated
         addEventListener: vi.fn<() => void>(),
         removeEventListener: vi.fn<() => void>(),
-        dispatchEvent: vi.fn(() => false),
+        dispatchEvent: vi.fn<() => boolean>(() => false),
       }) satisfies MediaQueryList,
   ),
 });
