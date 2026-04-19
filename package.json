@@ -20,7 +20,7 @@
     "@commitlint/types": "20.5.0",
     "@repo/typescript-config": "workspace:*",
     "knip": "6.4.1",
-    "lefthook": "2.1.5",
+    "lefthook": "2.1.6",
     "oxfmt": "0.45.0",
     "turbo": "2.9.6",
     "typescript": "6.0.2"
