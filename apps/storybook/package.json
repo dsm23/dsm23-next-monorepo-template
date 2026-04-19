@@ -33,7 +33,7 @@
     "@vitest/browser-playwright": "4.1.4",
     "npm-run-all2": "8.0.4",
     "oxlint": "1.60.0",
-    "oxlint-tsgolint": "0.21.0",
+    "oxlint-tsgolint": "0.21.1",
     "playwright": "1.59.1",
     "storybook": "10.3.5",
     "stylelint": "17.8.0",
