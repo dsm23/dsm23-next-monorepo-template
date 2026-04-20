@@ -41,6 +41,6 @@
     "stylelint": "17.8.0",
     "tailwindcss": "4.2.2",
     "typed-query-selector": "2.12.1",
-    "typescript": "6.0.2"
+    "typescript": "6.0.3"
   }
 }
