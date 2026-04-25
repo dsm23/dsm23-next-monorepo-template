@@ -1,6 +1,7 @@
 # syntax=docker.io/docker/dockerfile:1@sha256:2780b5c3bab67f1f76c781860de469442999ed1a0d7992a5efdf2cffc0e3d769
 
 FROM node:24.15.0-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f AS base
+FROM dhi.io/node:24.15.0@sha256:c4db36449d7ad1a2e97a91750673da63212edd5a2ebd6fe458b381191e0c424e AS hardened
 
 # corepack is broken https://github.com/nodejs/corepack/issues/612
 # corepack was fixed but is will be removed from node from v25+
@@ -40,20 +41,14 @@ RUN corepack enable pnpm \
 COPY --from=builder /app/out/full/ .
 RUN pnpm build
 
-FROM base AS runner
+FROM hardened AS runner
 WORKDIR /app
-
-# Don't run production as root
-RUN addgroup --system --gid 1001 nodejs \
-  && adduser --system --uid 1001 nextjs
 
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=installer --chown=nextjs:nodejs /app/apps/web/.next/standalone ./
-COPY --from=installer --chown=nextjs:nodejs /app/apps/web/.next/static ./apps/web/.next/static
-COPY --from=installer --chown=nextjs:nodejs /app/apps/web/public ./apps/web/public
-
-USER nextjs
+COPY --from=installer /app/apps/web/.next/standalone ./
+COPY --from=installer /app/apps/web/.next/static ./apps/web/.next/static
+COPY --from=installer /app/apps/web/public ./apps/web/public
 
 EXPOSE 3000
 
