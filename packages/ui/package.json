@@ -58,7 +58,7 @@
     "tailwind-merge": "3.5.0"
   },
   "devDependencies": {
-    "@fast-check/vitest": "0.4.0",
+    "@fast-check/vitest": "0.4.1",
     "@repo/oxlint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@storybook/nextjs-vite": "10.3.5",
