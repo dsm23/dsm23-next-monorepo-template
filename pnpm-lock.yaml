@@ -106,8 +106,8 @@ importers:
         specifier: 10.3.6
         version: 10.3.6(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       stylelint:
-        specifier: 17.10.0
-        version: 17.10.0(typescript@6.0.3)
+        specifier: 17.11.0
+        version: 17.11.0(typescript@6.0.3)
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -185,8 +185,8 @@ importers:
         specifier: 1.59.1
         version: 1.59.1
       stylelint:
-        specifier: 17.10.0
-        version: 17.10.0(typescript@6.0.3)
+        specifier: 17.11.0
+        version: 17.11.0(typescript@6.0.3)
       tailwindcss:
         specifier: 4.2.4
         version: 4.2.4
@@ -228,15 +228,15 @@ importers:
   packages/stylelint-config:
     dependencies:
       stylelint:
-        specifier: 17.10.0
-        version: 17.10.0(typescript@6.0.3)
+        specifier: 17.11.0
+        version: 17.11.0(typescript@6.0.3)
     devDependencies:
       stylelint-config-standard:
         specifier: 40.0.0
-        version: 40.0.0(stylelint@17.10.0(typescript@6.0.3))
+        version: 40.0.0(stylelint@17.11.0(typescript@6.0.3))
       stylelint-order:
         specifier: 8.1.1
-        version: 8.1.1(stylelint@17.10.0(typescript@6.0.3))
+        version: 8.1.1(stylelint@17.11.0(typescript@6.0.3))
 
   packages/tailwind-config:
     dependencies:
@@ -251,8 +251,8 @@ importers:
         specifier: 8.0.4
         version: 8.0.4
       stylelint:
-        specifier: 17.10.0
-        version: 17.10.0(typescript@6.0.3)
+        specifier: 17.11.0
+        version: 17.11.0(typescript@6.0.3)
       tw-animate-css:
         specifier: 1.4.0
         version: 1.4.0
@@ -3430,10 +3430,6 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.13:
-    resolution: {integrity: sha512-qif0+jGGZoLWdHey3UFHHWP0H7Gbmsk8T5VEqyYFbWqPr1XqvLGBbk/sl8V5exGmcYJklJOhOQq1pV9IcsiFag==}
-    engines: {node: ^10 || ^12 || >=14}
-
   postcss@8.5.14:
     resolution: {integrity: sha512-SoSL4+OSEtR99LHFZQiJLkT59C5B1amGO1NzTwj7TT1qCUgUO6hxOvzkOYxD+vMrXBM3XJIKzokoERdqQq/Zmg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -3702,8 +3698,8 @@ packages:
     peerDependencies:
       stylelint: ^16.18.0 || ^17.0.0
 
-  stylelint@17.10.0:
-    resolution: {integrity: sha512-cI7I6HHEYOHHVNVci+s92WlA3QfmNhjwFdgCgYV3TLEysilOjk+B3EFxMED1xY9GYB0Kre3OD+mSLj19VLTIvA==}
+  stylelint@17.11.0:
+    resolution: {integrity: sha512-/3czzmbF9XdGWvReDF3Ex4R23Ajolo7j8RB2bFNEqk6Ht356nlpVV+G5bG2Qt8AW1ofJzXztBRDnAtd7cgowWA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -6795,9 +6791,9 @@ snapshots:
 
   pngjs@7.0.0: {}
 
-  postcss-safe-parser@7.0.1(postcss@8.5.13):
+  postcss-safe-parser@7.0.1(postcss@8.5.14):
     dependencies:
-      postcss: 8.5.13
+      postcss: 8.5.14
 
   postcss-selector-parser@7.1.1:
     dependencies:
@@ -6811,12 +6807,6 @@ snapshots:
   postcss-value-parser@4.2.0: {}
 
   postcss@8.4.31:
-    dependencies:
-      nanoid: 3.3.12
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
-
-  postcss@8.5.13:
     dependencies:
       nanoid: 3.3.12
       picocolors: 1.1.1
@@ -7096,22 +7086,22 @@ snapshots:
     optionalDependencies:
       '@babel/core': 7.29.0
 
-  stylelint-config-recommended@18.0.0(stylelint@17.10.0(typescript@6.0.3)):
+  stylelint-config-recommended@18.0.0(stylelint@17.11.0(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.10.0(typescript@6.0.3)
+      stylelint: 17.11.0(typescript@6.0.3)
 
-  stylelint-config-standard@40.0.0(stylelint@17.10.0(typescript@6.0.3)):
+  stylelint-config-standard@40.0.0(stylelint@17.11.0(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.10.0(typescript@6.0.3)
-      stylelint-config-recommended: 18.0.0(stylelint@17.10.0(typescript@6.0.3))
+      stylelint: 17.11.0(typescript@6.0.3)
+      stylelint-config-recommended: 18.0.0(stylelint@17.11.0(typescript@6.0.3))
 
-  stylelint-order@8.1.1(stylelint@17.10.0(typescript@6.0.3)):
+  stylelint-order@8.1.1(stylelint@17.11.0(typescript@6.0.3)):
     dependencies:
       postcss: 8.5.14
       postcss-sorting: 10.0.0(postcss@8.5.14)
-      stylelint: 17.10.0(typescript@6.0.3)
+      stylelint: 17.11.0(typescript@6.0.3)
 
-  stylelint@17.10.0(typescript@6.0.3):
+  stylelint@17.11.0(typescript@6.0.3):
     dependencies:
       '@csstools/css-calc': 3.2.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
@@ -7140,8 +7130,8 @@ snapshots:
       micromatch: 4.0.8
       normalize-path: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.13
-      postcss-safe-parser: 7.0.1(postcss@8.5.13)
+      postcss: 8.5.14
+      postcss-safe-parser: 7.0.1(postcss@8.5.14)
       postcss-selector-parser: 7.1.1
       postcss-value-parser: 4.2.0
       string-width: 8.2.1
