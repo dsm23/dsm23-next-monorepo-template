@@ -9,7 +9,7 @@ FROM dhi.io/node:24.15.0@sha256:53af386f9d5b82263daece3148a1dc61ec578e0c83c79eec
 # RUN npm install -g corepack@latest
 
 # renovate: datasource=npm depName=turbo
-ARG TURBO_VERSION="2.9.9"
+ARG TURBO_VERSION="2.9.10"
 
 FROM base AS builder
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why gcompat might be needed.
