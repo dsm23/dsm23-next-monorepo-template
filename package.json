@@ -22,7 +22,7 @@
     "knip": "6.12.1",
     "lefthook": "2.1.6",
     "oxfmt": "0.48.0",
-    "turbo": "2.9.11",
+    "turbo": "2.9.12",
     "typescript": "6.0.3"
   },
   "engines": {
