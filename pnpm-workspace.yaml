@@ -1,9 +1,11 @@
+allowBuilds:
+  esbuild: false
+  lefthook: true
+  sharp: false
+
 blockExoticSubdeps: true
 
 nodeLinker: isolated
-
-onlyBuiltDependencies:
-  - lefthook
 
 packages:
   - "apps/*"

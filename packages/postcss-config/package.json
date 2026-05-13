@@ -10,5 +10,8 @@
   "devDependencies": {
     "@tailwindcss/postcss": "4.3.0",
     "postcss": "8.5.14"
+  },
+  "peerDependencies": {
+    "@tailwindcss/postcss": "4.3.0"
   }
 }
