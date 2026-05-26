@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "eslint-plugin-storybook": "10.4.0",
+    "eslint-plugin-storybook": "10.4.1",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
