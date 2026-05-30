@@ -1,5 +1,5 @@
 import type { StorybookConfig } from "@storybook/nextjs-vite";
-import { join, dirname } from "node:path";
+import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 /**
@@ -7,8 +7,8 @@ import { fileURLToPath } from "node:url";
  * It is needed in projects that use Yarn PnP or are set up within a monorepo.
  */
 function getAbsolutePath(value: string): string {
-  return dirname(
-    fileURLToPath(import.meta.resolve(join(value, "package.json"))),
+  return path.dirname(
+    fileURLToPath(import.meta.resolve(path.join(value, "package.json"))),
   );
 }
 
