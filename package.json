@@ -21,7 +21,7 @@
     "@repo/typescript-config": "workspace:*",
     "knip": "6.15.0",
     "lefthook": "2.1.9",
-    "oxfmt": "0.52.0",
+    "oxfmt": "0.53.0",
     "turbo": "2.9.16",
     "typescript": "6.0.3"
   },
