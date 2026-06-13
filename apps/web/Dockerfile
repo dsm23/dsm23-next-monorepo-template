@@ -6,7 +6,7 @@ FROM dhi.io/node:26.1.0-alpine3.23@sha256:89ba306d54a9025da2e7862ff22ae13a95d825
 # renovate: datasource=docker depName=dhi.io/node
 ARG NODE_VERSION="26.2.0"
 # renovate: datasource=npm depName=turbo
-ARG TURBO_VERSION="2.9.16"
+ARG TURBO_VERSION="2.9.17"
 
 FROM base AS builder
 
