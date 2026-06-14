@@ -22,11 +22,11 @@
     "knip": "6.16.1",
     "lefthook": "2.1.9",
     "oxfmt": "0.54.0",
-    "turbo": "2.9.17",
+    "turbo": "2.9.18",
     "typescript": "6.0.3"
   },
   "engines": {
     "node": ">=26.0.0"
   },
-  "packageManager": "pnpm@11.5.2"
+  "packageManager": "pnpm@11.5.3"
 }
