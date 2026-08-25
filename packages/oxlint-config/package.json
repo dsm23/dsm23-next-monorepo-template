@@ -15,11 +15,11 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "eslint-plugin-storybook": "10.4.4",
+    "eslint-plugin-storybook": "10.5.10",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
     "oxlint": "1.68.0",
-    "oxlint-tsgolint": "0.23.0"
+    "oxlint-tsgolint": "0.25.0"
   }
 }
