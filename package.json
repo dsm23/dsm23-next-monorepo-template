@@ -15,14 +15,14 @@
     "e2e": "turbo e2e"
   },
   "devDependencies": {
-    "@commitlint/cli": "21.0.2",
-    "@commitlint/config-conventional": "21.0.2",
-    "@commitlint/types": "21.0.1",
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
+    "@commitlint/types": "21.2.3",
     "@repo/typescript-config": "workspace:*",
-    "knip": "6.16.1",
-    "lefthook": "2.1.9",
-    "oxfmt": "0.54.0",
-    "turbo": "2.9.18",
+    "knip": "6.39.0",
+    "lefthook": "2.1.16",
+    "oxfmt": "0.71.0",
+    "turbo": "2.11.7",
     "typescript": "6.0.3"
   },
   "engines": {
